@@ -1,0 +1,14 @@
+{
+  "name": "tng-fever-dreams",
+  "version": "1.0.0",
+  "description": "A bot which posts TNG dialog written by a RNN.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Fine",
+  "license": "ISC",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
+}
