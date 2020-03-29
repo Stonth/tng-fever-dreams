@@ -8,11 +8,13 @@ This program has two functions. The first is to parse script files into a single
  - Create a folder "secret" and in the directory create a file "twitter-keys.json". This is a JSON file with string keys and values for "consumer_key", "consumer_secret", "access_token_key", "access_token_secret".
  
 ## Building data
-Usage: "node . data"
-This will create a file input.txt in the data directory. You can use this file to train the neural network by moving it into "lib/char-rnn/data". I used the following command to do this (int he "lib/char-rnn" directory):
-th train.lua -data_dir data -rnn_size 1024 -num_layers 3
-This trains the network with 1024 nodes in size and with 3 layers. This will generate a checkpoint file every 1000 iterations. Once you have found a checkpoint with a suitably low loss, you can rename it "checkpoint.t7" and move it into "data/"
+Usage: "node . data"__
+__
+This will create a file input.txt in the data directory. You can use this file to train the neural network by moving it into "lib/char-rnn/data". I used the following command to do this (int he "lib/char-rnn" directory):__
+th train.lua -data_dir data -rnn_size 1024 -num_layers 3__
+This trains the network with 1024 nodes in size and with 3 layers. This will generate a checkpoint file every 1000 iterations. Once you have found a checkpoint with a suitably low loss, you can rename it "checkpoint.t7" and move it into "data/"__
 
 ## Tweeting
-Usage: "node . tweet"
+Usage: "node . tweet"__
+__
 This will send and report a tweet every 4 hours.
